@@ -1,0 +1,7 @@
+<ul>
+    <li ng-repeat="item in itemsArray track by item._id">
+        <a>{{ item.fullName | uppercase}}</a>
+        <a>{{ item.createdAt | date :'dd/MM/yyyy' }}</a>
+        <button ng-click="deleteUser(item._id)">del</button>
+    </li>
+</ul>
